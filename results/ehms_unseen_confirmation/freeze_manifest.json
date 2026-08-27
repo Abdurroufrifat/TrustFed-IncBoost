@@ -1,0 +1,35 @@
+{
+  "analysis_status": "confirmatory_unseen_seeds",
+  "confirmation_seeds": [
+    121,
+    132,
+    143,
+    154,
+    165,
+    176,
+    187,
+    198,
+    209,
+    220
+  ],
+  "development_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77,
+    88,
+    99,
+    110
+  ],
+  "no_post_result_tuning_permitted": true,
+  "planned_runs": 90,
+  "sha256": {
+    "aggregation_implementation": "ba1f9c8b9889e18423fd510a8573c2c159ef5e4f30d1ff92f01cda8d3a6f63d7",
+    "base_config": "0b3dba1cd1eae213fb3174f0e5a413d4b2c7a0ec7e4a78cbb3ef5e560e4092d2",
+    "confirmation_runner": "5d8910946e187aff8d2dd387af2c9b7af957a8fa31fccc193e2ecb351de737e8",
+    "matrix_config": "03210205dbfad8309c03bd2f35e6ce5da6b4917c5e9c6d26462f772d23391893"
+  }
+}

@@ -1,0 +1,10 @@
+numpy<3,>=2.0
+pandas<3,>=2.2
+scikit-learn<2,>=1.5
+xgboost<4,>=3.0
+PyYAML<7,>=6.0
+joblib<2,>=1.4
+psutil<8,>=6
+matplotlib<4,>=3.9
+seaborn<1,>=0.13
+pyarrow<25,>=17

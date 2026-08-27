@@ -1,0 +1,134 @@
+base_config: configs/ehms_trustfed_v2_clean.yaml
+seeds: [121, 132, 143, 154, 165, 176, 187, 198, 209, 220]
+output_directory: outputs/ehms_unseen_confirmation
+
+protocol:
+  status: frozen_before_confirmation
+  development_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 110]
+  planned_runs: 90
+  clean_macro_f1_noninferiority_margin: 0.01
+  max_mean_malicious_weight_v2: 0.02
+  primary_poisoning_metrics: [pr_auc, roc_auc]
+  secondary_metrics:
+    - accuracy
+    - balanced_accuracy
+    - macro_f1
+    - attack_precision
+    - attack_recall
+    - attack_f1
+    - false_positives
+    - false_negatives
+  no_post_result_tuning_permitted: true
+
+aggregation_profiles:
+  uniform:
+    method: uniform
+    sample_power: 0.00
+    performance_power: 3.00
+    time_power: 0.00
+  trust_v1:
+    method: trust_aware
+    sample_power: 0.00
+    performance_power: 3.00
+    time_power: 0.00
+    calibration_strength: 2.00
+    consensus_strength: 0.25
+    max_weight: 0.40
+  trust_v2:
+    method: trust_aware_v2
+    sample_power: 0.00
+    performance_power: 3.00
+    time_power: 0.00
+    calibration_strength: 2.00
+    consensus_strength: 0.10
+    chance_margin: 0.02
+    minimum_macro_f1: 0.25
+    security_power: 2.00
+    consensus_z_cap: 3.00
+    minimum_trusted_clients: 3
+    max_weight: 0.40
+
+conditions:
+  - name: confirm_clean_uniform
+    scenario: clean
+    profile: uniform
+    attack: none
+  - name: confirm_clean_trust_v1
+    scenario: clean
+    profile: trust_v1
+    attack: none
+  - name: confirm_clean_trust_v2
+    scenario: clean
+    profile: trust_v2
+    attack: none
+  - name: confirm_largest_flip_uniform
+    scenario: largest_flip
+    profile: uniform
+    attack: label_flip
+    strategy: largest_client
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: confirm_largest_flip_trust_v1
+    scenario: largest_flip
+    profile: trust_v1
+    attack: label_flip
+    strategy: largest_client
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: confirm_largest_flip_trust_v2
+    scenario: largest_flip
+    profile: trust_v2
+    attack: label_flip
+    strategy: largest_client
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: confirm_attack_rich_flip_uniform
+    scenario: attack_rich_flip
+    profile: uniform
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: confirm_attack_rich_flip_trust_v1
+    scenario: attack_rich_flip
+    profile: trust_v1
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: confirm_attack_rich_flip_trust_v2
+    scenario: attack_rich_flip
+    profile: trust_v2
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+
+paired_comparisons:
+  - name: clean_v1_minus_uniform
+    left: confirm_clean_trust_v1
+    right: confirm_clean_uniform
+  - name: clean_v2_minus_uniform
+    left: confirm_clean_trust_v2
+    right: confirm_clean_uniform
+  - name: clean_v2_minus_v1
+    left: confirm_clean_trust_v2
+    right: confirm_clean_trust_v1
+  - name: largest_v1_minus_uniform
+    left: confirm_largest_flip_trust_v1
+    right: confirm_largest_flip_uniform
+  - name: largest_v2_minus_uniform
+    left: confirm_largest_flip_trust_v2
+    right: confirm_largest_flip_uniform
+  - name: largest_v2_minus_v1
+    left: confirm_largest_flip_trust_v2
+    right: confirm_largest_flip_trust_v1
+  - name: attack_rich_v1_minus_uniform
+    left: confirm_attack_rich_flip_trust_v1
+    right: confirm_attack_rich_flip_uniform
+  - name: attack_rich_v2_minus_uniform
+    left: confirm_attack_rich_flip_trust_v2
+    right: confirm_attack_rich_flip_uniform
+  - name: attack_rich_v2_minus_v1
+    left: confirm_attack_rich_flip_trust_v2
+    right: confirm_attack_rich_flip_trust_v1

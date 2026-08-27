@@ -1,0 +1,40 @@
+project:
+  name: ton_iot_strong_baseline
+  seed: 42
+dataset:
+  path: data/raw/ton_iot/*.csv
+  label_column: auto
+  positive_label: auto
+  drop_columns: []
+  max_rows: null
+split:
+  method: group
+  test_size: 0.20
+  validation_size: 0.20
+  group_column: __source_file__
+  time_column: null
+preprocessing:
+  use_ica: true
+  ica_components: auto
+model:
+  backend: xgboost
+  class_weight: balanced
+  threshold_metric: macro_f1
+  params:
+    n_estimators: 1600
+    learning_rate: 0.025
+    max_depth: 8
+    min_child_weight: 3
+    subsample: 0.80
+    colsample_bytree: 0.85
+    reg_alpha: 0.10
+    reg_lambda: 2.0
+    gamma: 0.0
+    tree_method: hist
+    early_stopping_rounds: 100
+    n_jobs: -1
+evaluation:
+  bootstrap_repetitions: 500
+output:
+  directory: outputs/ton_iot
+

@@ -1,0 +1,44 @@
+base_config: configs/ehms_trustfed_clean.yaml
+seeds: [11, 22, 33, 44, 55]
+output_directory: outputs/ehms_robustness_matrix
+conditions:
+  - name: clean_uniform
+    aggregation: uniform
+    attack: none
+  - name: clean_trust
+    aggregation: trust_aware
+    attack: none
+  - name: largest_flip_uniform
+    aggregation: uniform
+    attack: label_flip
+    strategy: largest_client
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: largest_flip_trust
+    aggregation: trust_aware
+    attack: label_flip
+    strategy: largest_client
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: attack_rich_flip_uniform
+    aggregation: uniform
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+  - name: attack_rich_flip_trust
+    aggregation: trust_aware
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+paired_comparisons:
+  - name: clean_trust_minus_uniform
+    trust: clean_trust
+    baseline: clean_uniform
+  - name: largest_attack_trust_minus_uniform
+    trust: largest_flip_trust
+    baseline: largest_flip_uniform
+  - name: attack_rich_trust_minus_uniform
+    trust: attack_rich_flip_trust
+    baseline: attack_rich_flip_uniform

@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: trustfed-incboost
+Version: 0.6.0
+Summary: Reproducible foundation for trustworthy federated IoT intrusion detection
+Requires-Python: <3.14,>=3.12
+Requires-Dist: numpy<3,>=2.0
+Requires-Dist: pandas<3,>=2.2
+Requires-Dist: scikit-learn<2,>=1.5
+Requires-Dist: xgboost<4,>=3.0
+Requires-Dist: PyYAML<7,>=6.0
+Requires-Dist: joblib<2,>=1.4
+Requires-Dist: psutil<8,>=6
+Requires-Dist: matplotlib<4,>=3.9
+Requires-Dist: seaborn<1,>=0.13
+Requires-Dist: pyarrow<25,>=17

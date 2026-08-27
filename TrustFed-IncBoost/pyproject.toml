@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trustfed-incboost"
+version = "0.6.0"
+description = "Reproducible foundation for trustworthy federated IoT intrusion detection"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "scikit-learn>=1.5,<2",
+  "xgboost>=3.0,<4",
+  "PyYAML>=6.0,<7",
+  "joblib>=1.4,<2",
+  "psutil>=6,<8",
+  "matplotlib>=3.9,<4",
+  "seaborn>=0.13,<1",
+  "pyarrow>=17,<25",
+]
+
+[project.scripts]
+trustfed = "trustfed_incboost.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

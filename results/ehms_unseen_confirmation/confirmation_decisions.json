@@ -1,0 +1,61 @@
+{
+  "all_primary_acceptance_checks_passed": true,
+  "analysis_status": "confirmatory_unseen_seeds",
+  "clean_noninferiority": {
+    "criterion": "paired macro-F1 lower 95% bound > -0.0100",
+    "lower_95": 0.005423405485597019,
+    "mean_difference": 0.010750796664121477,
+    "passed": true,
+    "upper_95": 0.016769246929822852
+  },
+  "malicious_weight_control": {
+    "attack_rich_flip": {
+      "criterion": "mean malicious weight <= 0.0200",
+      "maximum_malicious_weight": 0.0,
+      "mean_malicious_weight": 0.0,
+      "passed": true
+    },
+    "largest_flip": {
+      "criterion": "mean malicious weight <= 0.0200",
+      "maximum_malicious_weight": 0.0,
+      "mean_malicious_weight": 0.0,
+      "passed": true
+    }
+  },
+  "no_post_result_tuning_permitted": true,
+  "poisoning_auc_superiority": {
+    "attack_rich_flip": {
+      "criterion": "PR-AUC and ROC-AUC paired lower 95% bounds > 0",
+      "passed": true,
+      "pr_auc": {
+        "lower_95": 0.003700580296219343,
+        "mean_difference": 0.0072476206298310196,
+        "n_pairs": 10,
+        "upper_95": 0.011023175613804975
+      },
+      "roc_auc": {
+        "lower_95": 0.0019986099580847844,
+        "mean_difference": 0.003932132294408241,
+        "n_pairs": 10,
+        "upper_95": 0.0066526082060048616
+      }
+    },
+    "largest_flip": {
+      "criterion": "PR-AUC and ROC-AUC paired lower 95% bounds > 0",
+      "passed": true,
+      "pr_auc": {
+        "lower_95": 0.003677548276550196,
+        "mean_difference": 0.007760989271300844,
+        "n_pairs": 10,
+        "upper_95": 0.012046337366022475
+      },
+      "roc_auc": {
+        "lower_95": 0.0014985408856285345,
+        "mean_difference": 0.0026648566275581987,
+        "n_pairs": 10,
+        "upper_95": 0.003955434008403944
+      }
+    }
+  },
+  "v2_fallback_activation_rate_all_conditions": 0.0
+}

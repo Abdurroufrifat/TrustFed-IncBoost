@@ -1,0 +1,33 @@
+base_config: configs/synthetic_trustfed_clean.yaml
+seeds: [11, 22]
+output_directory: outputs/synthetic_robustness_matrix
+conditions:
+  - name: clean_uniform
+    aggregation: uniform
+    attack: none
+    bootstrap_repetitions: 20
+  - name: clean_trust
+    aggregation: trust_aware
+    attack: none
+    bootstrap_repetitions: 20
+  - name: attack_rich_flip_uniform
+    aggregation: uniform
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+    bootstrap_repetitions: 20
+  - name: attack_rich_flip_trust
+    aggregation: trust_aware
+    attack: label_flip
+    strategy: most_attack_samples
+    malicious_count: 1
+    flip_fraction: 1.00
+    bootstrap_repetitions: 20
+paired_comparisons:
+  - name: clean_trust_minus_uniform
+    trust: clean_trust
+    baseline: clean_uniform
+  - name: attack_rich_trust_minus_uniform
+    trust: attack_rich_flip_trust
+    baseline: attack_rich_flip_uniform

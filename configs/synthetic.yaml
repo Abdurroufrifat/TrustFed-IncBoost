@@ -1,0 +1,32 @@
+project:
+  name: synthetic_smoke
+  seed: 42
+dataset:
+  path: data/raw/synthetic/synthetic_iot.csv
+  label_column: label
+  positive_label: attack
+  drop_columns: [timestamp, device_id]
+  max_rows: null
+split:
+  method: fingerprint_disjoint
+  test_size: 0.20
+  validation_size: 0.20
+  group_column: null
+  time_column: null
+preprocessing:
+  use_ica: false
+  ica_components: null
+model:
+  backend: sklearn
+  class_weight: balanced
+  threshold_metric: macro_f1
+  params:
+    learning_rate: 0.08
+    max_iter: 250
+    max_leaf_nodes: 31
+    l2_regularization: 1.0
+evaluation:
+  bootstrap_repetitions: 100
+output:
+  directory: outputs/synthetic
+

@@ -1,0 +1,53 @@
+project:
+  name: ehms_no_ica
+  seed: 42
+dataset:
+  path: data/raw/ehms/wustl-ehms-2020_with_attacks_categories.csv
+  label_column: Label
+  positive_label: 1
+  drop_columns:
+    - Dir
+    - Flgs
+    - SrcAddr
+    - DstAddr
+    - Sport
+    - Dport
+    - SrcGap
+    - DstGap
+    - SrcMac
+    - DstMac
+    - DIntPktAct
+    - dMinPktSz
+    - Trans
+    - "Attack Category"
+  max_rows: null
+split:
+  method: fingerprint_disjoint
+  test_size: 0.20
+  validation_size: 0.20
+  group_column: null
+  time_column: null
+preprocessing:
+  use_ica: false
+  ica_components: null
+model:
+  backend: xgboost
+  class_weight: balanced
+  threshold_metric: macro_f1
+  params:
+    n_estimators: 1200
+    learning_rate: 0.03
+    max_depth: 7
+    min_child_weight: 2
+    subsample: 0.80
+    colsample_bytree: 0.85
+    reg_alpha: 0.05
+    reg_lambda: 1.50
+    gamma: 0.0
+    tree_method: hist
+    early_stopping_rounds: 80
+    n_jobs: -1
+evaluation:
+  bootstrap_repetitions: 500
+output:
+  directory: outputs/ehms_no_ica
