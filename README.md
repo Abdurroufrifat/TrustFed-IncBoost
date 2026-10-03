@@ -1,5 +1,11 @@
 # TrustFed-IncBoost
 
+The repository also contains the device-twin study code and the separate
+PhysioNet physiological state-protection experiment. See
+`docs/DEVICE_TWIN_STUDY.md` and `docs/PHYSIONET_FEASIBILITY.md` for their
+respective data requirements and run commands. Raw datasets and generated
+outputs are excluded from GitHub.
+
 Phase 6 adds a frozen 90-run unseen-seed confirmation comparing Uniform,
 TrustFed V1, and TrustFed V2 under clean, largest-client label-flip, and
 attack-rich-client label-flip conditions. See

@@ -1,0 +1,59 @@
+diff --git a/src/trustfed_incboost/federated_pipeline.py b/src/trustfed_incboost/federated_pipeline.py
+index ca919ae..14287ea 100644
+--- a/src/trustfed_incboost/federated_pipeline.py
++++ b/src/trustfed_incboost/federated_pipeline.py
+@@ -22,6 +22,7 @@ from trustfed_incboost.data.loader import (
+     prepare_features,
+ )
+ from trustfed_incboost.data.splitting import make_split, split_manifest
++from trustfed_incboost.data.site_partition import site_group_partition
+ from trustfed_incboost.evaluation.metrics import (
+     bootstrap_confidence_intervals,
+     classification_metrics,
+@@ -142,17 +143,36 @@ def run_federated_training(config: dict) -> Path:
+ 
+     fed_config = config["federated"]
+     partition_config = fed_config["partition"]
+-    partitions = dirichlet_label_partition(
+-        y_train,
+-        n_clients=int(fed_config["n_clients"]),
+-        alpha=float(partition_config["alpha"]),
+-        seed=seed + 200,
+-        min_samples_per_client=int(partition_config.get("min_samples_per_client", 1)),
+-        require_all_classes=bool(partition_config.get("require_all_classes", True)),
+-    )
++    partition_method = partition_config["method"]
++    if partition_method == "site_group":
++        site_column = partition_config["site_column"]
++        if site_column not in X.columns:
++            raise ValueError(f"Site column {site_column!r} must be kept in the training features")
++        partitions, site_map = site_group_partition(
++            X.iloc[split.train][site_column].to_numpy(),
++            y_train,
++            n_clients=int(fed_config["n_clients"]),
++            min_samples_per_client=int(partition_config.get("min_samples_per_client", 1)),
++            require_all_classes=bool(partition_config.get("require_all_classes", True)),
++        )
++    elif partition_method == "dirichlet_label":
++        partitions = dirichlet_label_partition(
++            y_train,
++            n_clients=int(fed_config["n_clients"]),
++            alpha=float(partition_config["alpha"]),
++            seed=seed + 200,
++            min_samples_per_client=int(partition_config.get("min_samples_per_client", 1)),
++            require_all_classes=bool(partition_config.get("require_all_classes", True)),
++        )
++        site_map = {}
++    else:
++        raise ValueError(f"Unknown federated partition method: {partition_method}")
+     partition_report = client_partition_manifest(partitions, y_train)
+-    partition_report["method"] = "dirichlet_label"
+-    partition_report["alpha"] = float(partition_config["alpha"])
++    partition_report["method"] = partition_method
++    if site_map:
++        partition_report["site_by_client"] = {str(i): site for i, site in site_map.items()}
++    else:
++        partition_report["alpha"] = float(partition_config["alpha"])
+     write_json(run_directory / "client_partitions.json", partition_report)
+ 
+     model_config = config["model"]

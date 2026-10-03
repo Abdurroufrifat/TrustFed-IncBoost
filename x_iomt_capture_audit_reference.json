@@ -1,0 +1,140 @@
+{
+  "scope": "normal and physical anomaly captures with device MAC and four complete numeric device-state features",
+  "original_site_ids": false,
+  "network_attacks_eligible_for_device_twin": false,
+  "features": [
+    "Memory",
+    "In_Temperature",
+    "CPU",
+    "RSSI"
+  ],
+  "totals": {
+    "application_missing_device": 6965,
+    "application_missing_twin_features": 6965,
+    "application_rows": 123000,
+    "network_missing_device": 450832,
+    "network_missing_twin_features": 450832,
+    "network_rows": 450832,
+    "normal_missing_device": 464089,
+    "normal_missing_twin_features": 464089,
+    "normal_rows": 955613,
+    "physical_missing_device": 24815,
+    "physical_missing_twin_features": 24815,
+    "physical_rows": 52920
+  },
+  "devices": [
+    {
+      "device_id": "30:ae:a4:3f:91:7b",
+      "normal_rows": 3936,
+      "physical_anomaly_rows": 984,
+      "first_normal": "2025-06-02T16:35:41.922768+00:00",
+      "last_normal": "2025-06-13T17:02:54.188866+00:00",
+      "first_anomaly": "2025-06-02T15:35:54.922768+00:00",
+      "last_anomaly": "2025-06-02T16:03:09.188866+00:00",
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": true
+    },
+    {
+      "device_id": "84:f3:eb:12:34:56",
+      "normal_rows": 128263,
+      "physical_anomaly_rows": 0,
+      "first_normal": "2025-04-07T17:09:47.184098+00:00",
+      "last_normal": "2025-04-13T10:45:43.502543+00:00",
+      "first_anomaly": null,
+      "last_anomaly": null,
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": false
+    },
+    {
+      "device_id": "84:f3:eb:65:43:21",
+      "normal_rows": 128117,
+      "physical_anomaly_rows": 0,
+      "first_normal": "2025-04-07T17:09:45.488077+00:00",
+      "last_normal": "2025-04-13T10:46:03.924503+00:00",
+      "first_anomaly": null,
+      "last_anomaly": null,
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": false
+    },
+    {
+      "device_id": "a0:a3:b3:ed:ac:1c",
+      "normal_rows": 101384,
+      "physical_anomaly_rows": 12065,
+      "first_normal": "2025-04-07T11:33:59.323660+00:00",
+      "last_normal": "2025-04-13T10:45:28.502543+00:00",
+      "first_anomaly": "2025-04-07T14:50:25.929967+00:00",
+      "last_anomaly": "2025-04-09T17:53:06.957333+00:00",
+      "normal_recorded_before_first_anomaly": true,
+      "normal_recorded_after_last_anomaly": true
+    },
+    {
+      "device_id": "a4:cf:12:6b:3c:9e",
+      "normal_rows": 3936,
+      "physical_anomaly_rows": 984,
+      "first_normal": "2025-06-02T16:35:56.922768+00:00",
+      "last_normal": "2025-06-13T17:03:09.188866+00:00",
+      "first_anomaly": "2025-06-02T15:36:09.922768+00:00",
+      "last_anomaly": "2025-06-02T16:03:24.188866+00:00",
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": true
+    },
+    {
+      "device_id": "a8:42:e3:ab:ac:cc",
+      "normal_rows": 101628,
+      "physical_anomaly_rows": 12110,
+      "first_normal": "2025-04-07T11:34:04.717610+00:00",
+      "last_normal": "2025-04-13T10:45:48.924503+00:00",
+      "first_anomaly": "2025-04-07T14:50:25.928271+00:00",
+      "last_anomaly": "2025-04-09T17:53:04.478842+00:00",
+      "normal_recorded_before_first_anomaly": true,
+      "normal_recorded_after_last_anomaly": true
+    },
+    {
+      "device_id": "c4:4f:33:25:6d:a0",
+      "normal_rows": 3924,
+      "physical_anomaly_rows": 981,
+      "first_normal": "2025-06-02T16:08:14.214244+00:00",
+      "last_normal": "2025-06-13T16:35:56.910330+00:00",
+      "first_anomaly": "2025-06-02T15:08:27.214244+00:00",
+      "last_anomaly": "2025-06-02T15:36:11.910330+00:00",
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": true
+    },
+    {
+      "device_id": "d4:8a:fc:9d:64:80",
+      "normal_rows": 20336,
+      "physical_anomaly_rows": 981,
+      "first_normal": "2025-06-02T16:07:59.214244+00:00",
+      "last_normal": "2025-06-14T12:50:54.189142+00:00",
+      "first_anomaly": "2025-06-02T15:08:12.214244+00:00",
+      "last_anomaly": "2025-06-02T15:35:56.910330+00:00",
+      "normal_recorded_before_first_anomaly": false,
+      "normal_recorded_after_last_anomaly": true
+    }
+  ],
+  "global_chronological_60_20_20": {
+    "train": {
+      "rows": 311777,
+      "normal": 287602,
+      "physical_anomaly": 24175,
+      "first": "2025-04-07T11:33:59.323660+00:00",
+      "last": "2025-04-11T14:10:42.056779+00:00"
+    },
+    "validation": {
+      "rows": 103926,
+      "normal": 103926,
+      "physical_anomaly": 0,
+      "first": "2025-04-11T14:10:52.391072+00:00",
+      "last": "2025-04-12T17:10:42.069184+00:00"
+    },
+    "test": {
+      "rows": 103926,
+      "normal": 99996,
+      "physical_anomaly": 3930,
+      "first": "2025-04-12T17:10:43.454676+00:00",
+      "last": "2025-06-14T12:50:54.189142+00:00"
+    }
+  },
+  "three_intervals_contain_both_labels": false,
+  "conclusion": "STOP: at least one chronological interval lacks a label. Do not run the existing twin study on these files."
+}

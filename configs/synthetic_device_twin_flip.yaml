@@ -1,0 +1,59 @@
+project:
+  name: synthetic_device_twin_flip
+  seed: 412
+dataset:
+  path: data/raw/twin_streams/synthetic_device_stream.csv
+  label_column: label
+  positive_label: attack
+  drop_columns: []
+  max_rows: null
+split:
+  method: temporal
+  test_size: 0.20
+  validation_size: 0.20
+  group_column: null
+  time_column: timestamp
+preprocessing:
+  use_ica: false
+  ica_components: null
+federated:
+  n_clients: 5
+  partition:
+    method: site_group
+    site_column: site_id
+    min_samples_per_client: 60
+    require_all_classes: true
+  aggregation:
+    method: trust_aware_v2
+    sample_power: 0.00
+    performance_power: 3.00
+    time_power: 0.00
+    calibration_strength: 2.00
+    consensus_strength: 0.10
+    chance_margin: 0.02
+    minimum_macro_f1: 0.25
+    security_power: 2.00
+    consensus_z_cap: 3.00
+    minimum_trusted_clients: 3
+    max_weight: 0.40
+poisoning:
+  enabled: true
+  attack: label_flip
+  strategy: largest_client
+  malicious_count: 1
+  malicious_clients: []
+  flip_fraction: 1.00
+model:
+  backend: sklearn
+  class_weight: balanced
+  params:
+    learning_rate: 0.08
+    max_iter: 90
+    max_leaf_nodes: 24
+    l2_regularization: 1.0
+evaluation:
+  bootstrap_repetitions: 50
+twin_study:
+  synthetic_smoke: true
+output:
+  directory: outputs/synthetic_device_twin_flip

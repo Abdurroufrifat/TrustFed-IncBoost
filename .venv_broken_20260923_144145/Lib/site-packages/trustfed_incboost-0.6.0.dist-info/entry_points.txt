@@ -1,0 +1,2 @@
+[console_scripts]
+trustfed = trustfed_incboost.cli:main

@@ -25,3 +25,8 @@ paper/*.log
 paper/main.pdf
 paper/rendered*/
 *.zip
+*.mat
+*.hea
+*.dat
+training.zip
+*.csv.gz

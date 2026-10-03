@@ -1,0 +1,9538 @@
+{
+  "source_sha256": "1f191ca45f555f05ae23be67c34923e2e1624051669bd24a0e49bdad7e5ef686",
+  "source": "PhysioNet/CinC Challenge 2015 public training recordings",
+  "original_labels_mean": "true/false clinical alarms; NOT cyberattacks",
+  "original_hospital_id_available": false,
+  "patient_group_id_verified": false,
+  "warning": "Do not claim hospital federation or patient-disjoint splits from these files. Inspect waveform identity before splitting; injected attacks must be separately labelled.",
+  "record_count": 750,
+  "alarm_verdict_counts": {
+    "0": 456,
+    "1": 294
+  },
+  "alarm_type_counts": {
+    "Ventricular_Tachycardia": 341,
+    "Asystole": 122,
+    "Tachycardia": 140,
+    "Ventricular_Flutter_Fib": 58,
+    "Bradycardia": 89
+  },
+  "channel_counts": {
+    "II": 728,
+    "V": 684,
+    "PLETH": 627,
+    "RESP": 278,
+    "III": 39,
+    "aVF": 3,
+    "ABP": 343,
+    "I": 13,
+    "MCL": 28,
+    "aVL": 2,
+    "aVR": 3
+  },
+  "record_lengths": {
+    "250Hz_75000samples": 375,
+    "250Hz_82500samples": 375
+  },
+  "ecg_and_pleth_candidates": 627,
+  "manifest": [
+    {
+      "record": "v100s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v101l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v102s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a103l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a104s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a105l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t106s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t107l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t108s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a109l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "aVF",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t110s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v111l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "aVF",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t112s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v113l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t114s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v115l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t116s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t117l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t118s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v119l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f120s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f121l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v122s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a123l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b124s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b125l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b126s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v127l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v128s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f129l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f130s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v131l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v132s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v133l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a134s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v135l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v136s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f137l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f138s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v139l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v140s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v141l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a142s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v143l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f144s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a145l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v146s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v147l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v148s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t149l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t150s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t151l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a152s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v153l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v154s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v155l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t156s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t157l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v158s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v159l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v160s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a161l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v162s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a163l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v164s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a165l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v166s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a167l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v168s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v169l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a170s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a171l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a172s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t173l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t174s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t175l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v176s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v177l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a178s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v179l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v180s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v181l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v182s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b183l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b184s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a185l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a186s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b187l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v188s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f189l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f190s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t191l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t192s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t193l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v194s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t195l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f196s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v197l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v198s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v199l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v200s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v201l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v202s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a203l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v204s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v205l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v206s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v207l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t208s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t209l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "I",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v210s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v211l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v212s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t213l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t214s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b215l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b216s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v217l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v218s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a219l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b220s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v221l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v222s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a223l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v224s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a225l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a226s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b227l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b228s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b229l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v230s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b231l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v232s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v233l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t234s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t235l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f236s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f237l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t238s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a239l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t240s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v241l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v242s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v243l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v244s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v245l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v246s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v247l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v248s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t249l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v250s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t251l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t252s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v253l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v254s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v255l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v256s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v257l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v258s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v259l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f260s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f261l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v262s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t263l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t264s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b265l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a266s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a267l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b268s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b269l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t270s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v271l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a272s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a273l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v274s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v275l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t276s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t277l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a278s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a279l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v280s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f281l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v282s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v283l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t284s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b285l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b286s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a287l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a288s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v289l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "I",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v290s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v291l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v292s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v293l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v294s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v295l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v296s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a297l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v298s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b299l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t300s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a301l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a302s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v303l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f304s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t305l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a306s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v307l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b308s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v309l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a310s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a311l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v312s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b313l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b314s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a315l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v316s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v317l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v318s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v319l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t320s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f321l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v322s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v323l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v324s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v325l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v326s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v327l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v328s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "III",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v329l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b330s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b331l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b332s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t333l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v334s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t335l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v336s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v337l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v338s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b339l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b340s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b341l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t342s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t343l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t344s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a345l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f346s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v347l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v348s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b349l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "I",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t350s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t351l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f352s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v353l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v354s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v355l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t356s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t357l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t358s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v359l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v360s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v361l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f362s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a363l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v364s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v365l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v366s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v367l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v368s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v369l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v370s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v371l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a372s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v373l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v374s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v375l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a376s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a377l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a378s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b379l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v380s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v381l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a382s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t383l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t384s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a385l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a386s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b387l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b388s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b389l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v390s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a391l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v392s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t393l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t394s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v395l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a396s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a397l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v398s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v399l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v400s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v401l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v402s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v403l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v404s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v405l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t406s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f407l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f408s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t409l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t410s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t411l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t412s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t413l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f414s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f415l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t416s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t417l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t418s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v419l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a420s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v421l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a422s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v423l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t424s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t425l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v426s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v427l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b428s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a429l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t430s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v431l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v432s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v433l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t434s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a435l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a436s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v437l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v438s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a439l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "I",
+        "II",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f440s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "II",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f441l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a442s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a443l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t444s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t445l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a446s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t447l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v448s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a449l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f450s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b451l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v452s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v453l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v454s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b455l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b456s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a457l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t458s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v459l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v460s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a461l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a462s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v463l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v464s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a465l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v466s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t467l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t468s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t469l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v470s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v471l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v472s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v473l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f474s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v475l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v476s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t477l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t478s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v479l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v480s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v481l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v482s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v483l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b484s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b485l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b486s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b487l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b488s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v489l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a490s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v491l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v492s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f493l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b494s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b495l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t496s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b497l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v498s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f499l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f500s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v501l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v502s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t503l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t504s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v505l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t506s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t507l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t508s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t509l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v510s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v511l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a512s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v513l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a514s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b515l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b516s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b517l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v518s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v519l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t520s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t521l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v522s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v523l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t524s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v525l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a526s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a527l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b528s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f529l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f530s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v531l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v532s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v533l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v534s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v535l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v536s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b537l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b538s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a539l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v540s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v541l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v542s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f543l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f544s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f545l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t546s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t547l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v548s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v549l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a550s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v551l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v552s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b553l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b554s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a555l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a556s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v557l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a558s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v559l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b560s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b561l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b562s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f563l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v564s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t565l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v566s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t567l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v568s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v569l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v570s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v571l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f572s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v573l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v574s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v575l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f576s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t577l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b578s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v579l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t580s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v581l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a582s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v583l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a584s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v585l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f586s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b587l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b588s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t589l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v590s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a591l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f592s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f593l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t594s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t595l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v596s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v597l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v598s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a599l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b600s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v601l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f602s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a603l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a604s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f605l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a606s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v607l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a608s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v609l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f610s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v611l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v612s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f613l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t614s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v615l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v616s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b617l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f618s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v619l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "I",
+        "aVL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v620s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v621l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t622s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v623l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a624s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v625l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v626s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v627l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v628s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v629l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v630s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a631l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v632s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v633l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v634s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v635l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v636s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f637l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v638s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a639l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v640s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v641l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f642s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v643l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v644s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a645l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v646s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v647l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v648s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v649l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a650s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a651l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v652s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "aVR",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a653l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a654s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v655l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b656s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f657l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v658s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b659l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v660s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a661l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t662s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v663l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b664s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t665l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v666s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a667l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a668s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b669l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a670s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v671l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b672s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a673l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v674s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a675l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "MCL",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v676s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t677l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t678s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t679l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t680s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b681l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v682s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t683l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b684s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b685l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v686s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v687l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t688s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t689l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "aVL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t690s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f691l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v692s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t693l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "aVF",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a694s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b695l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v696s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f697l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t698s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a699l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t700s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v701l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t702s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "aVR",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b703l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v704s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a705l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b706s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t707l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b708s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t709l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v710s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v711l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a712s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v713l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v714s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a715l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "aVR",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t716s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t717l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v718s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t719l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v720s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v721l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b722s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a723l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v724s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v725l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v726s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v727l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v728s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v729l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b730s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t731l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v732s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v733l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b734s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a735l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v736s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t737l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v738s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t739l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "III",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a740s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t741l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t742s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v743l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t744s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t745l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a746s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "II",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t747l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v748s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v749l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "a750s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f751l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t752s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b753l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a754s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t755l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v756s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b757l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v758s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v759l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t760s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "III",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v761l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t762s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v763l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b764s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v765l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v766s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v767l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "f768s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v769l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v770s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t771l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v772s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v773l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v774s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v775l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a776s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t777l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a778s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v779l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a780s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v781l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v782s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v783l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v784s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a785l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t786s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t787l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v788s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f789l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t790s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v791l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "f792s",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v793l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b794s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v795l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a796s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v797l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a798s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f799l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t800s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "t801l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a802s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v803l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v804s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v805l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v806s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a807l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v808s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v809l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a810s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v811l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t812s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v813l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v814s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v815l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t816s",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "t817l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "III",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v818s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a819l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b820s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "t821l",
+      "alarm_type": "Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "a822s",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v823l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b824s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a825l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v826s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v827l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v828s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "f829l",
+      "alarm_type": "Ventricular_Flutter_Fib",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v830s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v831l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "b832s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v833l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v834s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b835l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v836s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v837l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b838s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b839l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "b840s",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b841l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP"
+      ]
+    },
+    {
+      "record": "v842s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "I",
+        "II",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v843l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "v844s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "true",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "MCL",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v845l",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v846s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH",
+        "RESP"
+      ]
+    },
+    {
+      "record": "a847l",
+      "alarm_type": "Asystole",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "ABP",
+        "RESP"
+      ]
+    },
+    {
+      "record": "v848s",
+      "alarm_type": "Ventricular_Tachycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 75000,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    },
+    {
+      "record": "b849l",
+      "alarm_type": "Bradycardia",
+      "alarm_verdict": "false",
+      "sample_rate_hz": 250,
+      "samples": 82500,
+      "channels": [
+        "II",
+        "V",
+        "PLETH"
+      ]
+    }
+  ]
+}
